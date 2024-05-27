@@ -1,0 +1,22 @@
+/* Index */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* attracties.php */
+
+.GridImagesAttracties {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+    }
+
+    .GridImagesAttracties img {
+        width: 250px;
+        height: 250px;
+    }
+.Attractie{
+    border: 1px solid black;
+    
+}
+
