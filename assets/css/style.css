@@ -1,15 +1,18 @@
-/* Index */
-*{
-    margin: 0;
-    padding: 0;
+/* Everywhere */
+body {
+    width: 95%;
+    margin: auto;
 }
+/* Index */
+
 /* attracties.php */
 
 .GridImagesAttracties {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 10px;
-    }
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    text-align: center;
+}
 
     .GridImagesAttracties img {
         width: 250px;
@@ -17,7 +20,4 @@
         object-fit: cover;
         object-position: center;
     }
-.Attractie{
-    border: 1px solid black;
-}
 
