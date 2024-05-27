@@ -21,46 +21,45 @@ session_start();
         $Achtbaan = $statement->fetchAll(PDO::FETCH_ASSOC);
         ?>
 
-        <table>
-            <tr>
-                <th>Naam</th>
-                <th>Beschrijving</th>
-                <th>Status</th>
-                <th>Wachttijd</th>
-                <th>Foto</th>
-                <th>Aanpassen</th>
-            </tr>
-            <?php foreach($Achtbaan as $Achtbaan): ?>
+            <table>
                 <tr>
-                    <td><?php echo $Achtbaan['naam']; ?></td>
-                    <td><?php echo substr($Achtbaan['beschrijving'], 0, 125) ."..."; ?></td>
-                    <td><?php echo substr($Achtbaan['status'], 0, 75); ?></td>
-                    <td><?php echo $Achtbaan['wachttijd']; ?></td>
-                    <td>
-                        <span class="photo-toggle">
-                            <a href="#" onclick="togglePhoto(this); return false;">Show photo</a>
-                            <img src="<?php echo $Achtbaan['foto']; ?>" alt="Attractie Foto">
-                        </span>
-                    </td>
-                    <td>
-                        <a href="AttractiesEdit.php?id=<?php echo $Achtbaan['id']; ?>">Aanpassen</a>
-                    </td>
-            <?php endforeach; ?>
-        </table>
-    </div>
+                    <th>Naam</th>
+                    <th>Beschrijving</th>
+                    <th>Status</th>
+                    <th>Wachttijd</th>
+                    <th>Foto</th>
+                    <th>Aanpassen</th>
+                </tr>
+                <?php foreach($Achtbaan as $Achtbaan): ?>
+                    <tr>
+                        <td><?php echo $Achtbaan['naam']; ?></td>
+                        <td><?php echo substr($Achtbaan['beschrijving'], 0, 125) ."..."; ?></td>
+                        <td><?php echo substr($Achtbaan['status'], 0, 75); ?></td>
+                        <td><?php echo $Achtbaan['wachttijd']; ?></td>
+                        <td>
+                            <span class="photo-toggle">
+                                <a href="#" onclick="togglePhoto(this); return false;">Show photo</a>
+                                <img src="<?php echo $Achtbaan['foto']; ?>" alt="Attractie Foto" style="display: none;">
+                            </span>
+                        </td>
+                        <td>
+                            <a href="AttractiesEdit.php?id=<?php echo $Achtbaan['id']; ?>">Aanpassen</a>
+                        </td>
+                <?php endforeach; ?>
+            </table>
 
-    <script>
-        function togglePhoto(link) {
-            var img = link.nextElementSibling;
-            if (img.style.display === 'none') {
-                img.style.display = 'block';
-                link.textContent = 'Hide photo';
-            } else {
-                img.style.display = 'none';
-                link.textContent = 'Show photo';
-            }
-        }
-    </script>
+            <script>
+                function togglePhoto(link) {
+                    var img = link.nextElementSibling;
+                    if (img.style.display === 'none') {
+                        img.style.display = 'block';
+                        link.textContent = 'Hide photo';
+                    } else {
+                        img.style.display = 'none';
+                        link.textContent = 'Show photo';
+                    }
+                }
+            </script>
 <?php
 include 'imports/footer.php';
 ?>
