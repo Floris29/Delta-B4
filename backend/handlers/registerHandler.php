@@ -16,14 +16,13 @@ $statement->execute([
 if ($statement->rowCount() > 0) {
     echo 'Deze gebruikersnaam is al in gebruik.';
 } else {
-
     if ($password === $password_check) {
         $hash = password_hash($password, PASSWORD_DEFAULT);
     } else {
         echo 'Wachtwoorden komen niet overeen';
         die();
     }
-    $query = "SELECT * FROM users WHERE username = :username";
+
     $query = "INSERT INTO users (username, password) VALUES (:username, :hash)";
     $statement = $conn->prepare($query);
     $statement->execute([
@@ -31,9 +30,7 @@ if ($statement->rowCount() > 0) {
         ':hash' => $hash
     ]);
 
-    $_SESSION['user_id'] = $user['id'];
-    $_SESSION['username'] = $user['username'];
+    $_SESSION['user_id'] = $user_id;
 
     header("Location: ../../index.php");
-    exit();
 }
