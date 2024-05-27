@@ -3,16 +3,10 @@
 
     <a href="attracties.php">Attracties</a>
 
-    <?php
-    if (isset($_SESSION['user_id'])) {
-        $ingelogd = true;
-    } else {
-        $ingelogd = false;
-    }
-    if ($ingelogd): ?>
-                <p><a href="logout.php">Uitloggen</a></p>
-        <?php else: ?>
-                <p><a href="login.php">Inloggen</a></p>
-                <p><a href="register.php">Regristreren</a></p>
-        <?php endif; ?>
+            <?php if (isset($_SESSION['user_id'])): ?>
+                <a href="logout.php" class="nav-item">Logout</a>
+            <?php else: ?>
+                <a href="login.php" class="nav-item">Login</a>
+                <a href="register.php">Regristreren</a>
+            <?php endif; ?>
 </header>

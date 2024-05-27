@@ -1,7 +1,7 @@
 <?php
 require 'imports/head.php';
+session_start();
 ?>
-
 <body>
 
 <?php
@@ -17,7 +17,7 @@ require 'imports/header.php';
         Je kan hier nieuwe attracties toevoegen, bestaande attracties aanpassen en attracties verwijderen. 
         Ook kan je hier de bezoekersaantallen van je attracties bekijken en de gemiddelde bezoekersaantallen van je attracties.</p>
 
-    <p>Als normale gebruiker kan je de gemiddelde wachttijden zien van elke attractie</p>
+    <p>Als normale gebruiker kan je de gemiddelde wachttijden en een descriptie zien van elke attractie</p>
 
     
 </body>

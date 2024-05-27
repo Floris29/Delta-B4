@@ -63,6 +63,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 <?php
 require 'imports/head.php';
+session_start();
 ?>
 
 <body>

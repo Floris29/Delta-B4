@@ -1,5 +1,6 @@
 <?php
 require 'imports/head.php';
+session_start();
 ?>
 
 <body>
@@ -10,11 +11,7 @@ require 'imports/header.php';
 
         <h2>Registreer je voor de manager omgeving</h2>
         
-        <form action="backend/registerHandler.php" method="POST">
-            <div class="form-group">
-                <label for="email">email:</label>
-                <input type="text" name="email">
-            </div>
+        <form action="backend/handlers/registerHandler.php" method="POST">
             <div class="form-group">
                 <label for="username">username:</label>
                 <input type="text" name="username">

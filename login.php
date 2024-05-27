@@ -1,5 +1,6 @@
 <?php
 require 'imports/head.php';
+session_start();
 ?>
 
 <body>
