@@ -5,30 +5,28 @@
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
 
-/* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
 }
 
-/* Modal Content */
 .modal-content {
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+  max-width: 600px;
 }
 
-/* The Close Button */
 .close {
   color: #aaaaaa;
   float: right;
@@ -43,7 +41,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
   cursor: pointer;
 }
 
-/* Attraction styling */
 .Attractie {
   border: 1px solid #ccc;
   margin: 10px;
@@ -54,6 +51,14 @@ body {font-family: Arial, Helvetica, sans-serif;}
 .Attractie img {
   width: 100px;
   height: auto;
+}
+
+#modalImage {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
 }
 </style>
 </head>
@@ -146,9 +151,7 @@ require 'imports/header.php';
         </div>
     </div>
     
-<!-- The Modal -->
 <div id="myModal" class="modal">
-  <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
     <h3 id="modalTitle">Title</h3>
@@ -160,18 +163,12 @@ require 'imports/header.php';
 </div>
 
 <script>
-// Get the modal
 var modal = document.getElementById("myModal");
-
-// Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
 }
 
-// Function to set modal content dynamically
 function setModalContent(title, imageSrc, description, status, waitTime) {
     document.getElementById("modalTitle").innerHTML = title;
     document.getElementById("modalImage").src = imageSrc;
@@ -180,7 +177,6 @@ function setModalContent(title, imageSrc, description, status, waitTime) {
     document.getElementById("modalWaitTime").innerHTML = "Estimated Wait Time: " + waitTime;
 }
 
-// Add event listeners to each attraction
 var attractions = document.querySelectorAll('.Attractie');
 attractions.forEach(function(attraction) {
     attraction.addEventListener('click', function() {
