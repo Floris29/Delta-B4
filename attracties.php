@@ -6,8 +6,6 @@
 </head>
 <body>
 
-<h1>Attractions</h1>
-
 <?php
 require 'imports/head.php';
 session_start();
@@ -18,14 +16,14 @@ session_start();
 require 'imports/header.php';
 ?>
     
-    <h2 class="titel-h2">Attractions</h2>
+    <h2 class="titel-h2">Attracties</h2>
     <p class="p-subtitel">Click op de attracties voor meer info!</p>
     <div class="GridImagesAttracties">
     <div class="Attractie" data-title="baron" data-image="assets/img/baron.png" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores doloremque, sed quis, veritatis corporis culpa error reprehenderit repellendus illo similique velit nisi, sunt atque commodi veniam incidunt minima animi totam." data-status="Active" data-wait-time="15 minutes">
             <img src="assets/img/baron.png" alt="baron">
             <h2><strong>Baron</strong></h2>
         </div>
-        <div class="Attractie" data-title="bronzy" data-image="assets/img/bronzy.png" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores doloremque, sed quis, veritatis corporis culpa error reprehenderit repellendus illo similique velit nisi, sunt atque commodi veniam incidunt minima animi totam." data-status="Active" data-wait-time="15 minutes">
+        <div class="Attractie" data-title="bronzy" data-image="assets/img/bronzy.png" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores doloremque, sed quis, veritatis corporis culpa error reprehenderit repellendus illo similique velit nisi, sunt atque commodi veniam incidunt minima animi totam." data-status="Onderhoud" data-wait-time="5 minutes">
             <img src="assets/img/bronzy.png" alt="bronzy">
             <p><strong>bronzy</strong></p>
         </div>
@@ -45,7 +43,7 @@ require 'imports/header.php';
             <img src="assets/img/masterofSpeed.png" alt="Master of Speed">
             <p><strong>Master of Speed</strong></p>
                    </div>
-        <div class="Attractie" data-title="No Gravity" data-image="assets/img/nogravity.png" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores doloremque, sed quis, veritatis corporis culpa error reprehenderit repellendus illo similique velit nisi, sunt atque commodi veniam incidunt minima animi totam." data-status="Active" data-wait-time="10 minutes">
+        <div class="Attractie" data-title="No Gravity" data-image="assets/img/nogravity.png" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores doloremque, sed quis, veritatis corporis culpa error reprehenderit repellendus illo similique velit nisi, sunt atque commodi veniam incidunt minima animi totam." data-status="Onderhoud" data-wait-time="45 minutes">
             <img src="assets/img/nogravity.png" alt="No Gravity">
             <p><strong>No Gravity</strong></p>
                    </div>

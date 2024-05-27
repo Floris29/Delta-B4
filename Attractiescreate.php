@@ -43,7 +43,7 @@ session_start();
                 <input type="url" name="foto" id="foto" class="form-input">
             </div>
 
-            <input type="submit" value="Verstuur melding" class="submit">
+            <input type="submit" value="Maak Attractie" class="submit">
 
         </form>
     </div>

@@ -33,8 +33,8 @@ session_start();
             <?php foreach($Achtbaan as $Achtbaan): ?>
                 <tr>
                     <td><?php echo $Achtbaan['naam']; ?></td>
-                    <td><?php echo $Achtbaan['beschrijving']; ?></td>
-                    <td><?php echo $Achtbaan['status']; ?></td>
+                    <td><?php echo substr($Achtbaan['beschrijving'], 0, 125) ."..."; ?></td>
+                    <td><?php echo substr($Achtbaan['status'], 0, 75); ?></td>
                     <td><?php echo $Achtbaan['wachttijd']; ?></td>
                     <td>
                         <span class="photo-toggle">
