@@ -1,10 +1,12 @@
 <?php
 require 'imports/head.php';
-
-require 'imports/header.php';
 ?>
 
 <body>
+
+<?php
+require 'imports/header.php';
+ ?>
     
     <h1>Welkom bij Attractie Managment</h1>
     <h4>Een webstie gebouwd voor de managers</h4>

@@ -1,10 +1,12 @@
 <?php
 require 'imports/head.php';
-
-require 'imports/header.php';
 ?>
 
 <body>
+
+<?php
+require 'imports/header.php';
+ ?>
     
 </body>
 
