@@ -1,5 +1,5 @@
 <header>
-    <h1>Attractie Manager</h1>>
+    <h1>Attractie Manager</h1>
 
     <a href="attracties.php">Attracties</a>
 
