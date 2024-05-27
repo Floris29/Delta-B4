@@ -6,21 +6,18 @@
         $statement->bindParam(':id', $id);
         $statement->execute();
         $attraction = $statement->fetch(PDO::FETCH_ASSOC);
+
+        session_start();
+        include 'imports/head.php';
 ?>
 
-<!doctype html>
-<html lang="nl">
 
-<head>
-    <title>Edit Attractie</title>
-    <?php require_once 'imports/head.php'; ?>
-</head>
 
 <body>
 
     <?php require_once 'imports/header.php'; ?>
 
-    <div class="container">
+    <div class="form-container">
         <h1>Bewerk Attractie</h1>
 
         <form action="handlers/adminhandler.php?action=edit&id=<?php echo $id; ?>" method="POST">
@@ -54,7 +51,7 @@
 
 
             <form action="handlers/adminhandler.php?action=delete&id=<?php echo $_GET['id'];?>" method="POST" onsubmit="return confirm('Weet je zeker dat je dit wilt verwijderen? Verwijderd is verwijderd.');">
-            <input type="submit" value="Melding Verwijderen">
+            <input type="submit" value="Melding Verwijderen" class="submit">
             </form>
         </div>
     </div>

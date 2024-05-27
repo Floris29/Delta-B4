@@ -13,7 +13,7 @@ require 'imports/header.php';
     <h1>Welkom bij Attractie Managment</h1>
     <h4>Een webstie gebouwd voor de managers</h4>
 
-    <img src="" alt="Attractie manager logo">
+    <img src="assets/img/logo.png" alt="Attractie manager logo" class="logo">
 
     <p>Attractie Managment is een website waar je als manager van een attractiepark je attracties kan beheren. 
         Je kan hier nieuwe attracties toevoegen, bestaande attracties aanpassen en attracties verwijderen. 

@@ -81,15 +81,20 @@ body {
         background-color: #ff9933;
         text-align: center;
         padding: 10px;
-        margin-top: 150px;
+        margin-top: 75px;
     }
 
     /* Index */
 
-    .index-container{
+    .index-container h1, h4, p{
         text-align: center;
         width: 40%;
-        margin: 0 auto;
+        margin: 15px auto;
+    }
+
+    .logo{
+        display: block;
+        margin: 20px auto;
     }
 
     /* Login en Register */

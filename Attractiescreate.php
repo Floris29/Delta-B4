@@ -1,5 +1,7 @@
 <?php 
-require_once 'backend/config/config.php'; ?>
+require_once 'backend/config/config.php'; 
+session_start();
+?>
 <!doctype html>
 <html lang="nl">
 
@@ -12,7 +14,7 @@ require_once 'backend/config/config.php'; ?>
 
     <?php require_once 'imports/header.php'; ?>
 
-    <div class="container">
+    <div class="form-container">
         <h1>Nieuwe Attractie</h1>
 
         <form action="handlers/adminhandler.php?action=create" method="POST">
@@ -41,7 +43,7 @@ require_once 'backend/config/config.php'; ?>
                 <input type="url" name="foto" id="foto" class="form-input">
             </div>
 
-            <input type="submit" value="Verstuur melding">
+            <input type="submit" value="Verstuur melding" class="submit">
 
         </form>
     </div>
