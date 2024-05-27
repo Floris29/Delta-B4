@@ -6,6 +6,7 @@ require 'imports/header.php';
 
 <body>
     
+    <img src="" alt="">
 </body>
 
 <?php
