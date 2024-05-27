@@ -83,3 +83,33 @@ body {
         padding: 10px;
         margin-top: 150px;
     }
+
+    /* Index */
+
+    .index-container{
+        text-align: center;
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    /* Login en Register */
+
+    .form-container{
+        text-align: center;
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    form label{
+        display: block;
+        font-weight: bold;
+        margin: 7px 0;
+        font-size: large;
+    }
+
+    .submit{
+        margin-top: 25px;
+        background-color: #ff9933;
+        width: 150px;
+        font-weight: bolder;
+    }

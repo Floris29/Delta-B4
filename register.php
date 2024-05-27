@@ -9,11 +9,13 @@ session_start();
 require 'imports/header.php';
 ?>
 
+<div class="form-container">
+
         <h2>Registreer je voor de manager omgeving</h2>
         
         <form action="backend/handlers/registerHandler.php" method="POST">
             <div class="form-group">
-                <label for="username">username:</label>
+                <label for="username">Username:</label>
                 <input type="text" name="username">
             </div>
             <div class="form-group">
@@ -21,13 +23,13 @@ require 'imports/header.php';
                 <input type="password" name="password">
             </div>
             <div class="form-group">
-                <label for="password">Password check:</label>
+                <label for="password">Herhaal wachtwoord:</label>
                 <input type="password" name="password_check">
             </div>
-            <input type="submit" value="Regristreren">
+            <input type="submit" value="Regristreren" class="submit">
         </form>
 
-
+        </div>
 </body>
 
 <?php

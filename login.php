@@ -8,22 +8,23 @@ session_start();
 <?php
 require 'imports/header.php';
  ?>
-
+<div class="form-container">
 
         <h2>Login in de manager omgeving</h2>
         
         <form action="backend/handlers/loginHandler.php" method="POST">
             <div class="form-group">
-                <label for="username">username</label>
+                <label for="username">Username</label>
                 <input type="text" name="username">
             </div>
             <div class="form-group">
                 <label for="password">Password:</label>
                 <input type="password" name="password">
             </div>
-            <input type="submit" value="Inloggen">
+            <input type="submit" value="Inloggen" class="submit">
         </form>
 
+        </div>
 
 </body>
 

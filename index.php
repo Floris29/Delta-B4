@@ -8,6 +8,8 @@ session_start();
 require 'imports/header.php';
  ?>
     
+<div class="index-container">
+
     <h1>Welkom bij Attractie Managment</h1>
     <h4>Een webstie gebouwd voor de managers</h4>
 
@@ -18,7 +20,7 @@ require 'imports/header.php';
         Ook kan je hier de bezoekersaantallen van je attracties bekijken en de gemiddelde bezoekersaantallen van je attracties.</p>
 
     <p>Als normale gebruiker kan je de gemiddelde wachttijden en een descriptie zien van elke attractie</p>
-
+    </div>
     
 </body>
 
