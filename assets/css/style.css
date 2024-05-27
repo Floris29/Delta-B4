@@ -14,12 +14,14 @@ body {
     text-align: center;
 }
 
-    .GridImagesAttracties img {
-        width: 250px;
-        height: 250px;
-        object-fit: cover;
-        object-position: center;
-    }
+.GridImagesAttracties img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
 
     .titel-h2, .p-subtitel{
         text-align: center;

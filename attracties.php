@@ -1,4 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/css/modal.css">
+</head>
+<body>
 
+<h1>Attractions</h1>
 
 <?php
 require 'imports/head.php';
@@ -15,7 +23,7 @@ require 'imports/header.php';
     <div class="GridImagesAttracties">
     <div class="Attractie" data-title="baron" data-image="assets/img/baron.png" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores doloremque, sed quis, veritatis corporis culpa error reprehenderit repellendus illo similique velit nisi, sunt atque commodi veniam incidunt minima animi totam." data-status="Active" data-wait-time="15 minutes">
             <img src="assets/img/baron.png" alt="baron">
-            <p><strong>Baron</strong></p>
+            <h2><strong>Baron</strong></h2>
         </div>
         <div class="Attractie" data-title="bronzy" data-image="assets/img/bronzy.png" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores doloremque, sed quis, veritatis corporis culpa error reprehenderit repellendus illo similique velit nisi, sunt atque commodi veniam incidunt minima animi totam." data-status="Active" data-wait-time="15 minutes">
             <img src="assets/img/bronzy.png" alt="bronzy">
