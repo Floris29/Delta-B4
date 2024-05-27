@@ -1,29 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        
-        th, td {
-            padding: 8px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-        
-        th {
-            background-color: #f2f2f2;
-        }
-    </style>
-</head>
+<?php
+include 'imports/head.php';
+?>
 <body>
     <?php require_once 'imports/header.php'; ?>
-    <link rel="stylesheet" href="<?php echo $base_url; ?>/css/index.css">
     <div class="container">
         <h1>Attractie Management</h1>
         <a href="Attractiescreate.php">Maak een attractie!</a>
@@ -81,11 +60,9 @@
             }
         }
     </script>
+<?php
+include 'imports/footer.php';
+?>
 
-    <style>
-        .photo-toggle img {
-            display: none;
-        }
-    </style>
 </body>
 </html>
