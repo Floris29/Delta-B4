@@ -1,5 +1,6 @@
 <?php
 include 'imports/head.php';
+session_start();
 ?>
 <body>
     <?php require_once 'imports/header.php'; ?>
