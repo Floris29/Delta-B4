@@ -48,6 +48,10 @@ session_start();
         </form>
     </div>
 
+<?php
+require_once 'imports/footer.php';
+?>
+
 </body>
 
 </html>

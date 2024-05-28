@@ -6,7 +6,6 @@
 
     <?php if (isset($_SESSION['user_id'])): ?>
                 <a href="logout.php" class="nav-item">Logout</a>
-                <div class="dropdown-nav">
                 <a href="adminpanel.php">Admin paneel</a>
             <?php else: ?>
                 <a href="login.php" class="nav-item">Login</a>

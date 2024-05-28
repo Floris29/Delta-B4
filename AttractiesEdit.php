@@ -56,6 +56,10 @@
         </div>
     </div>
 
+<?php
+include 'imports/footer.php';
+?>
+
 </body>
 
 </html>

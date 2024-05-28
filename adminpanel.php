@@ -47,6 +47,7 @@ session_start();
                         </td>
                 <?php endforeach; ?>
             </table>
+            </div>
 
             <script>
                 function togglePhoto(link) {
