@@ -14,12 +14,25 @@ require 'imports/header.php';
     <h4>Creëer, Beheer en bewonder je attracties eenvoudig!!</h4>
 
     <img src="assets/img/logo.png" alt="Attractie manager logo" class="logo">
+    <h2>Over Attractie Management</h2>
+        <p>Attractie Management is dé ultieme tool voor attractieparkbeheerders. Hier kun je:</p>
+        <ul>
+            <li>Nieuwe attracties toevoegen</li>
+            <li>Bestaande attracties aanpassen</li>
+            <li>Attracties verwijderen</li>
+            <li>Bezoekersstatistieken bekijken</li>
+            <li>Gemiddelde bezoekersaantallen analyseren</li>
+        </ul>
 
-    <p>Attractie Managment is een website waar je als manager van een attractiepark je attracties kan beheren. 
-        Je kan hier nieuwe attracties toevoegen, bestaande attracties aanpassen en attracties verwijderen. 
-        Ook kan je hier de bezoekersaantallen van je attracties bekijken en de gemiddelde bezoekersaantallen van je attracties.</p>
+        <h2>Voor Gebruikers</h2>
+        <p>Als gewone gebruiker kun je profiteren van:</p>
+        <ul>
+            <li>Informatie over gemiddelde wachttijden</li>
+            <li>Beschrijvingen van elke attractie</li>
+        </ul>
 
-    <p>Als normale gebruiker kan je de gemiddelde wachttijden en een descriptie zien van elke attractie</p>
+        <p>Ontdek hoe Attractie Management jouw attractieparkervaring kan verbeteren!</p>
+
     </div>
     
 </body>

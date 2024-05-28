@@ -2,9 +2,16 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* Index */
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
 
 /* attracties.php */
 
@@ -90,12 +97,15 @@ footer {
 
 /* Index */
 
-.index-container h1,
-h4,
-p {
+.index-container {
     text-align: center;
     width: 40%;
     margin: 15px auto;
+
+}
+
+ul {
+    list-style-type: none;
 }
 
 .logo {
