@@ -13,13 +13,18 @@ $statement->execute([
 ]);
 $user = $statement->fetch(PDO::FETCH_ASSOC);
 
+$account_error = 'Error: account niet.';
+
 if ($statement->rowCount() < 1) {
-    echo 'Error: account bestaat niet.';
+    echo "<script type='text/javascript'>window.alert('$account_error');</script>";
     die();
 }
 
+$wachtwoord_error = 'Error: wachtwoord is incorrect.';
+
 if (!password_verify($password, $user['password'])) {
-    echo 'Error: Wachtwoord is onjuist.';
+    echo "<script type='text/javascript'>window.alert('$wachtwoord_error');</script>";
+    ;
     die();
 }
 

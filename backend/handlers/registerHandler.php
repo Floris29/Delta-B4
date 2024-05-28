@@ -13,13 +13,16 @@ $statement->execute([
     ':username' => $username
 ]);
 
+$username_gebruik = 'Deze gebruikersnaam is al in gebruik.';
+$password_error = 'Wachtwoorden komen niet overeen.';
+
 if ($statement->rowCount() > 0) {
-    echo 'Deze gebruikersnaam is al in gebruik.';
+    echo "<script type='text/javascript'>window.alert('$username_gebruik');</script>";
 } else {
     if ($password === $password_check) {
         $hash = password_hash($password, PASSWORD_DEFAULT);
     } else {
-        echo 'Wachtwoorden komen niet overeen';
+        echo "<script type='text/javascript'>window.alert('$password_error');</script>";
         die();
     }
 
