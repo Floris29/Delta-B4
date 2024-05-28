@@ -13,19 +13,18 @@ $statement->execute([
 ]);
 $user = $statement->fetch(PDO::FETCH_ASSOC);
 
-$account_error = 'Error: account niet.';
+$account_error = 'Error: account  niet niet.';
 
 if ($statement->rowCount() < 1) {
-    echo "<script type='text/javascript'>window.alert('$account_error');</script>";
-    die();
+    header('Location: ../../login.php?error=' . urlencode($account_error));
+    exit();
 }
 
 $wachtwoord_error = 'Error: wachtwoord is incorrect.';
 
 if (!password_verify($password, $user['password'])) {
-    echo "<script type='text/javascript'>window.alert('$wachtwoord_error');</script>";
-    ;
-    die();
+    header('Location: ../../login.php?error=' . urlencode($wachtwoord_error));
+    exit();
 }
 
 $_SESSION['user_id'] = $user['id'];
