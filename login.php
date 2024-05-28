@@ -8,7 +8,7 @@ session_start();
 <?php
 require 'imports/header.php';
  ?>
-<div class="form-container">
+<section class="form-container">
 
         <h2>Login in de manager omgeving</h2>
         
@@ -23,8 +23,7 @@ require 'imports/header.php';
             </div>
             <input type="submit" value="Inloggen" class="submit">
         </form>
-
-        </div>
+        </section>
 
 </body>
 

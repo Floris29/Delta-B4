@@ -8,8 +8,8 @@ session_start();
 <?php
 require 'imports/header.php';
 ?>
+<section class="form-container">
 
-<div class="form-container">
 
         <h2>Registreer je voor de manager omgeving</h2>
         
@@ -28,8 +28,7 @@ require 'imports/header.php';
             </div>
             <input type="submit" value="Regristreren" class="submit">
         </form>
-
-        </div>
+        </section>
 </body>
 
 <?php
