@@ -6,7 +6,7 @@ session_start();
     <?php require_once 'imports/header.php'; ?>
     <div class="container">
         <h1>Attractie Management</h1>
-        <a href="Attractiescreate.php">Maak een attractie!</a>
+        <a href="Attractiescreate.php" class="button">Maak een attractie!</a>
         <?php
         if (isset($_GET['msg'])) {
             $msg = $_GET['msg'];
@@ -38,12 +38,12 @@ session_start();
                         <td><?php echo $Achtbaan['wachttijd']; ?></td>
                         <td>
                             <span class="photo-toggle">
-                                <a href="#" onclick="togglePhoto(this); return false;">Show photo</a>
+                                <a href="#" onclick="togglePhoto(this); return false;" class="button" >Show photo</a>
                                 <img src="<?php echo $Achtbaan['foto']; ?>" alt="Attractie Foto" style="display: none;" class="databasefotos">
                             </span>
                         </td>
                         <td>
-                            <a href="AttractiesEdit.php?id=<?php echo $Achtbaan['id']; ?>">Aanpassen</a>
+                            <a href="AttractiesEdit.php?id=<?php echo $Achtbaan['id']; ?>" class="button">Aanpassen</a>
                         </td>
                 <?php endforeach; ?>
             </table>

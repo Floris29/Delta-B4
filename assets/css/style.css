@@ -77,11 +77,15 @@ nav {
 }
 
 nav a {
+    background-color: #ff9933;
+    color: white;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 5px;
     text-decoration: none;
-    color: #0066ff;
-    padding: 15px;
+    text-wrap: nowrap;
+    text-decoration: none;
     border: 1px solid #0066ff;
-    font-weight: bold;
 }
 
 
@@ -157,4 +161,18 @@ form label {
 .container{
     width: 70%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.button{
+    background-color: #ff9933;
+    color: white;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 5px;
+    text-decoration: none;
+    text-wrap: nowrap;
+    
+
 }
