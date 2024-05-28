@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 /* Index */
 
 /* attracties.php */
@@ -23,108 +24,145 @@ body {
 
 
 
-    .titel-h2, .p-subtitel{
-        text-align: center;
-    }
+.titel-h2,
+.p-subtitel {
+    text-align: center;
+}
 
-    /* Adminpanel.php */
+/* Adminpanel.php */
 
-    table {
-        width: 100%;
-        border-collapse: collapse;
-    }
-    
-    th, td {
-        padding: 8px;
-        text-align: left;
-        border-bottom: 1px solid #ddd;
-    }
-    
-    th {
-        background-color: #f2f2f2;
-    }
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
 
-    .photo-toggle img {
-        display: none;
-    }
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
 
-    /* Header */
+th {
+    background-color: #f2f2f2;
+}
 
-    header{
-        background-color: #ff9933;
-    }
+.photo-toggle img {
+    display: none;
+}
 
-    header h1{
-        margin: 0;
-        padding: 10px;
-        color: #0066ff;
-        text-align: center;
-    }
+/* Header */
 
-    nav{
-        text-align: center;
-        padding: 20px;
-    }
+header {
+    background-color: #ff9933;
+}
 
-    nav a{
-        text-decoration: none;
-        color: #0066ff;
-        padding: 15px;
-        border: 1px solid #0066ff;
-        font-weight: bold;
-    }
+header h1 {
+    margin: 0;
+    padding: 10px;
+    color: #0066ff;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    padding: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0066ff;
+    padding: 15px;
+    border: 1px solid #0066ff;
+    font-weight: bold;
+}
+
+.dropdown-nav {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown-nav:hover .dropdown-content {
+    display: block;
+}
 
 
 
-    /* Footer */
 
-    footer{
-        background-color: #ff9933;
-        text-align: center;
-        padding: 10px;
-        margin-top: 75px;
-        font-weight: bold;
-    }
+/* Footer */
 
-    /* Index */
+footer {
+    background-color: #ff9933;
+    text-align: center;
+    padding: 10px;
+    margin-top: 75px;
+    font-weight: bold;
+}
 
-    .index-container h1, h4, p{
-        text-align: center;
-        width: 40%;
-        margin: 15px auto;
-    }
+/* Index */
 
-    .logo{
-        display: block;
-        margin: 20px auto;
-        width: 800px;
-    }
+.index-container h1,
+h4,
+p {
+    text-align: center;
+    width: 40%;
+    margin: 15px auto;
+}
 
-    /* Login en Register */
+.logo {
+    display: block;
+    margin: 20px auto;
+    width: 800px;
+}
 
-    .form-container{
-        text-align: center;
-        width: 40%;
-        margin: 0 auto;
-    }
+/* Login en Register */
 
-    form label{
-        display: block;
-        font-weight: bold;
-        margin: 7px 0;
-        font-size: large;
-    }
+.form-container {
+    text-align: center;
+    width: 40%;
+    margin: auto auto;
+    height: 70vh;
+}
 
-    .submit{
-        margin-top: 25px;
-        background-color: #ff9933;
-        width: 150px;
-        font-weight: bolder;
-    }
+form label {
+    display: block;
+    font-weight: bold;
+    margin: 7px 0;
+    font-size: large;
+}
 
-    /* Edit */
+.submit {
+    margin-top: 25px;
+    background-color: #ff9933;
+    width: 150px;
+    font-weight: bolder;
+}
 
-    .form-input{
-        width: 300px;
-        text-align: center;
-    }
+
+
+/* Edit */
+
+.form-input {
+    width: 300px;
+    text-align: center;
+}
