@@ -73,6 +73,6 @@ if($_GET['action'] == 'delete') {
             ":id" => $_GET['id'],
         ]);
     
-        header("location: ../adminhandler.php?msg=Attractie is Verwijderd");
+        header("location: ../adminpanel.php?msg=Attractie is Verwijderd");
     }    
 ?>
