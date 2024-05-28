@@ -11,7 +11,7 @@ require 'imports/header.php';
 <div class="index-container">
 
     <h1>Welkom bij Attractie Managment</h1>
-    <h4>Een webstie gebouwd voor de managers</h4>
+    <h4>Creëer, Beheer en bewonder je attracties eenvoudig!!</h4>
 
     <img src="assets/img/logo.png" alt="Attractie manager logo" class="logo">
 

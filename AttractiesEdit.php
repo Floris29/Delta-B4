@@ -20,7 +20,7 @@
     <div class="form-container">
         <h1>Bewerk Attractie</h1>
 
-        <form action="handlers/adminhandler.php?action=edit&id=<?php echo $id; ?>" method="POST">
+        <form action="handlers/adminhandler.php?action=edit&id=<?php echo $id; ?>" method="POST" class="edit-form">
             <div class="form-group">
                 <label for="naam">Naam:</label>
                 <input type="text" name="naam" id="naam" class="form-input" value="<?php echo $attraction['naam']; ?>">
@@ -46,7 +46,7 @@
                 <input type="url" name="foto" id="foto" class="form-input" value="<?php echo $attraction['foto']; ?>">
             </div>
 
-            <input type="submit" value="Bewerk attractie">
+            <input type="submit" value="Bewerk attractie" class="submit">
         </form>
 
 
