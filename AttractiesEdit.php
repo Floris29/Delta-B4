@@ -27,7 +27,7 @@
             </div>
             <div class="form-group">
                 <label for="beschrijving">Beschrijving:</label>
-                <textarea name="beschrijving" id="beschrijving" class="form-input" rows="4"><?php echo $attraction['beschrijving']; ?></textarea>
+                <textarea name="beschrijving" id="beschrijving"  rows="4"><?php echo $attraction['beschrijving']; ?></textarea>
             </div>
             <div class="form-group">
                 <label for="status">Status:</label>
