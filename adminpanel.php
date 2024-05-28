@@ -39,7 +39,7 @@ session_start();
                         <td>
                             <span class="photo-toggle">
                                 <a href="#" onclick="togglePhoto(this); return false;">Show photo</a>
-                                <img src="<?php echo $Achtbaan['foto']; ?>" alt="Attractie Foto" style="display: none;">
+                                <img src="<?php echo $Achtbaan['foto']; ?>" alt="Attractie Foto" style="display: none;" class="databasefotos">
                             </span>
                         </td>
                         <td>
