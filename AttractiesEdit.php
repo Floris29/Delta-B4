@@ -51,7 +51,7 @@
 
 
             <form action="handlers/adminhandler.php?action=delete&id=<?php echo $_GET['id'];?>" method="POST" onsubmit="return confirm('Weet je zeker dat je dit wilt verwijderen? Verwijderd is verwijderd.');">
-            <input type="submit" value="Melding Verwijderen" class="submit">
+            <input type="submit" value="Attractie verwijderen" class="submit">
             </form>
         </div>
     </div>
