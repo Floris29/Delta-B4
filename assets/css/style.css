@@ -176,6 +176,9 @@ form label {
     
 
 }
+.button:hover{
+    background-color: #0066ff;
+}
 
 .error{
     padding: 20px;
