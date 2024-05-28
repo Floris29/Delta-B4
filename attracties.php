@@ -32,7 +32,7 @@ require 'imports/header.php';
         $beschrijving = $attraction['beschrijving'];
         $status = $attraction['status'];
         $wachttijd = $attraction['wachttijd'];
-        echo '<div class="Attractie" data-title="' . $naam . '" data-image="' . $foto . '" data-description="' . $beschrijving . '" data-status="' . $status . '" data-wait-time="' . $wachttijd . '">';
+        echo '<div class="Attractie" data-title="' . $naam . '" data-image="' . $foto . '" data-description="' . $beschrijving . '" data-status="' . $status . '" data-wait-time="' . $wachttijd . ' minuten">';
         echo '<img src="' . $foto . '" alt="' . $naam . '">';
         echo '<h2><strong>' . $naam . '</strong></h2>';
         echo '</div>';
@@ -63,7 +63,7 @@ function setModalContent(title, imageSrc, description, status, waitTime) {
     document.getElementById("modalImage").src = imageSrc;
     document.getElementById("modalDescription").innerHTML = description;
     document.getElementById("modalStatus").innerHTML = "Status: " + status;
-    document.getElementById("modalWaitTime").innerHTML = "Estimated Wait Time: " + waitTime;
+    document.getElementById("modalWaitTime").innerHTML = "Wachttijd: " + waitTime;
 }
 
 var attractions = document.querySelectorAll('.Attractie');
